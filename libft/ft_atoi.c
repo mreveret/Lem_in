@@ -6,24 +6,23 @@
 /*   By: machoffa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 12:34:45 by machoffa          #+#    #+#             */
-/*   Updated: 2019/04/16 15:05:56 by machoffa         ###   ########.fr       */
+/*   Updated: 2020/02/03 17:02:32 by machoffa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+long long		ft_atoi(const char *str)
 {
-	int		res;
-	int		neg;
-	int		i;
+	long long		res;
+	long long		neg;
+	long long		i;
+	long long		j;
 
 	res = 0;
 	i = 0;
+	j = 0;
 	neg = 1;
-	while (str[i] && (str[i] == '\f' || str[i] == '\t' || str[i] == ' '
-				|| str[i] == '\n' || str[i] == '\r' || str[i] == '\v'))
-		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -34,6 +33,9 @@ int		ft_atoi(const char *str)
 	{
 		res = res * 10 + (str[i] - '0');
 		i++;
+		j = 1;
 	}
+	if (j == 0)
+		return (-1);
 	return (res * neg);
 }

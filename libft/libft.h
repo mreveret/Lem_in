@@ -6,7 +6,7 @@
 /*   By: machoffa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 14:52:57 by machoffa          #+#    #+#             */
-/*   Updated: 2019/10/22 17:26:11 by machoffa         ###   ########.fr       */
+/*   Updated: 2020/02/03 17:03:36 by machoffa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *haystack, const char *needle,
 		size_t len);
-int					ft_atoi(const char *str);
+long long			ft_atoi(const char *str);
 int					ft_isalpha(int c);
 int					ft_isupper(int c);
 int					ft_islower(int c);

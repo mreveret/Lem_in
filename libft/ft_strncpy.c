@@ -6,7 +6,7 @@
 /*   By: machoffa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 12:28:30 by machoffa          #+#    #+#             */
-/*   Updated: 2019/04/05 22:23:05 by machoffa         ###   ########.fr       */
+/*   Updated: 2020/01/23 16:22:38 by machoffa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		i++;
 		len--;
 	}
+	dst[i] = '\0';
 	while (len > 0)
 	{
 		dst[i] = '\0';
