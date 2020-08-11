@@ -2,8 +2,8 @@
 
 Le programme va recevoir sur l'entrée standard la description de la fourmilière:
 * nombre_de_fourmis
-*les_salles
-*les_tubes
+* les_salles
+* les_tubes
 
 Le but est de faire rallier toutes les fourmis de la salle start à la salle end avec le moins d’étapes possible
 * chaque fourmis ne peux se déplacer qu'une fois par étape 
